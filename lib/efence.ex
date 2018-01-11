@@ -13,6 +13,6 @@ defmodule Efence do
 
   """
   def hello do
-    :world
+    Task.async()
   end
 end
