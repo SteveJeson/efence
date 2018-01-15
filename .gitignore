@@ -29,6 +29,4 @@ efence.iml
 .idea/preferred-vcs.xml
 .idea/workspace.xml
 .idea/codeStyles/Project.xml
-config/config.exs
 lib/efence/Elixir.Efence.beam
-rel/config.exs
