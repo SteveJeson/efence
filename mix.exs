@@ -27,6 +27,10 @@ defmodule Efence.Mixfile do
       {:libcluster, "~> 2.1"},
       {:distillery, "~> 1.5", runtime: false},
       {:ecto, "~> 2.1.6"},
+      {:maru, "~> 0.12"},
+
+      # Optional dependency for runtime configuration loading.
+      {:confex, "~> 3.3"},
     ]
   end
 end
