@@ -17,14 +17,10 @@ defmodule Efence do
 
   """
   def hello do
-<<<<<<< HEAD
     :world
   end
   def sum(a, b) do
     sum = a + b
     {:ok, sum}
-=======
-#    Task.async()
->>>>>>> d7c555a8e31ca3e7b81e6bd97ac211b45202f86a
   end
 end
