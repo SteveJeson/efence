@@ -1,19 +1,17 @@
 defmodule EfenceSup.Supervisor do
-  @moduledoc false
-  
-
-
   use Supervisor
 
-  def start_link(arg) do
-    Supervisor.start_link(__MODULE__, arg)
+  def start_link(opts) do
+    Supervisor.start_link(__MODULE__, :ok, opts)
   end
 
-  def init(arg) do
+  def init(:ok) do
     children = [
-      worker(MyWorker, [arg], restart: :temporary)
+      EfenceSup.BucketSupervisor,
+      {EfenceReg.Registry, name: EfenceReg.Registry},
+      {Task.Supervisor, name: Efence.RouterTasks},
     ]
 
-    supervise(children, strategy: :one_for_one)
+    Supervisor.init(children, strategy: :one_for_all)
   end
 end

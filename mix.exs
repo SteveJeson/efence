@@ -6,7 +6,7 @@ defmodule Efence.Mixfile do
       app: :efence,
       version: "0.1.0",
       elixir: "~> 1.5",
-      start_permanent: Mix.env == :prod,
+      start_permanent: Mix.env == :dev,
       deps: deps()
     ]
   end
@@ -14,7 +14,8 @@ defmodule Efence.Mixfile do
   # Run "mix help compile.app" to learn about applications.
   def application do
     [
-      extra_applications: [:logger]
+      extra_applications: [:logger],
+      mod: {Efence, []}
     ]
   end
 
