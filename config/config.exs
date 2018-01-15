@@ -35,8 +35,8 @@ config :libcluster,
            # The selected clustering strategy. Required.
            strategy: Cluster.Strategy.Epmd,
            # Configuration for the provided strategy. Optional.
-#           config: [hosts: [:"a@127.0.0.1", :"b@127.0.0.1"]],
-           config: [hosts: [:"efence_a@192.168.1.53", :"efence_b@192.168.1.113"]],
+           config: [hosts: [:"a@127.0.0.1", :"b@127.0.0.1"]],
+#           config: [hosts: [:"efence_a@192.168.1.53", :"efence_b@192.168.1.113"]],
            # The function to use for connecting nodes. The node
            # name will be appended to the argument list. Optional
            connect: {:net_kernel, :connect, []},
@@ -53,4 +53,8 @@ config :libcluster,
        ]
 
 config :maru, Efence.API,
-       http: [port: 8880]
+       http: [port: 8890]
+
+# config/test.exs
+config :maru, Efence.API,
+       test: true
