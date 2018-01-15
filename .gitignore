@@ -25,3 +25,10 @@ efence.iml
 .idea/misc.xml
 .idea/junitgenerator-prj-settings.xml
 .idea/inspectionProfiles/Project_Default.xml
+.idea/dbnavigator.xml
+.idea/preferred-vcs.xml
+.idea/workspace.xml
+.idea/codeStyles/Project.xml
+config/config.exs
+lib/efence/Elixir.Efence.beam
+rel/config.exs
