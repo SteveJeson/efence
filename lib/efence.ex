@@ -13,6 +13,6 @@ defmodule Efence do
 
   """
   def hello do
-    Task.async()
+#    Task.async()
   end
 end

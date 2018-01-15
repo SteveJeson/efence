@@ -50,3 +50,6 @@ config :libcluster,
            child_spec: [restart: :transient]
          ]
        ]
+
+config :maru, Efence.API,
+       http: [port: 8880]
