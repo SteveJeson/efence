@@ -30,3 +30,5 @@ efence.iml
 .idea/workspace.xml
 .idea/codeStyles/Project.xml
 lib/efence/Elixir.Efence.beam
+/.idea/
+.idea/
