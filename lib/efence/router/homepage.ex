@@ -1,11 +1,11 @@
 defmodule Efence.Router.User do
   use Maru.Router
 
-  params do
-    requires :code,    type: String #电子围栏编码
-    requires :deviceCodes, type: String #设备ID
-    requires :interval, type: Integer #运行时间间隔
-  end
+#  params do
+#    requires :code,    type: String #电子围栏编码
+#    requires :deviceCodes, type: String #设备ID
+#    requires :interval, type: Integer #运行时间间隔
+#  end
 
   post "startEfence" do
     json(conn, %{ success: true,
