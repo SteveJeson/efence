@@ -53,8 +53,9 @@ config :libcluster,
        ]
 
 config :maru, Efence.API,
-       http: [port: 8890]
+       http: [port: 8890, ip: {192, 168, 1, 113}]
 
+#        http: [port: 8890]
 # config/test.exs
 config :maru, Efence.API,
        test: true
