@@ -15,7 +15,7 @@ defmodule Efence.Mixfile do
   def application do
     [
       extra_applications: [:logger],
-      mod: {Efence, []}
+      mod: {Efence.Application, []}
     ]
   end
 
