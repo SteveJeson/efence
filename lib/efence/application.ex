@@ -23,8 +23,8 @@ defmodule Efence.Application do
     children = [
       # Starts a worker by calling: PoolboyApp.Worker.start_link(arg)
       # {PoolboyApp.Worker, arg},
-      :poolboy.child_spec(:worker, poolboy_config())
-#      :poolboy.child_spec(:worker1, poolboy_config())
+      :poolboy.child_spec(:worker, poolboy_config()),
+      {Task.Supervisor, name: Efence.RouterTasks},
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
